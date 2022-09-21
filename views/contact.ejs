@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/css/contact.css">
+    </head>
+    <body>
+        <h1 class="heading"><span class="headdata">My Contacts</span> </h1>
+        <div class="list">
+            <ul>
+                <% for (let i  of contact_list) {%>  
+                    <li class="list1" >
+                        <p> Name : <%= i.name %></p>
+                        <p>Phone : <%= i.number %></p>
+                    </li>
+                    <a href="/delete_contact/<%=i._id%>"><button class="deletebutton">Delete</button></a>
+                <%} %>
+            </ul>
+        </div>
+
+        <div class="form">
+            
+            <form action="/create-contact" method="POST">
+               Name: <input type="text" name="name"  placeholder="Aryan Tiwari" class="input"><br>
+               Phone: <input type="number" name="number"  placeholder="8299550885" class="input"><br>
+                <button type="submit" class="addbtn">Add to Contacts</button>
+            </form>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+.heading{
+display: flex;
+justify-content: center;
+color: white;
+
+
+}
+.headdata{
+    border-bottom: 5px solid gray;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.3em;
+   
+}
+.list li {
+    list-style: none;
+}
+.list1{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+.deletebutton{
+    background-color: gray;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.addbtn{
+    background-color: gray;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
